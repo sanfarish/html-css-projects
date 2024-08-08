@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: url(./assets/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 420px;
+    background: transparent;
+    color: #fff;
+    padding: 30px 40px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+.input-box input::placeholder {
+    color: #fff;
+}
+
+.input-box input:focus::placeholder {
+    color: transparent;
+}
+
+.input-box i {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper .remember-forgot {
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 14.5px;
+}
+
+.remember-forgot label input {
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: #fff;
+    text-align: right;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    color: #333;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.wrapper .register-link {
+    margin: 20px 0 15px;
+    font-size: 14.5px;
+    text-align: center;
+}
+
+.register-link p a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+.break {
+    margin: 18px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.break .line {
+    position: relative;
+    width: 100%;
+    height: 1px;
+    background: #d4d4d4;
+}
+
+.break span {
+    margin: 0 15px;
+    font-size: 14.5px;
+}
+
+.media-options {
+    position: relative;
+    width: 100%;
+    min-height: 50px;
+    margin-top: 25px;
+}
+
+.media-options a {
+    width: 100%;
+    height: 100%;
+    padding: 13px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .btn:hover,
+.media-options a:hover {
+    filter: brightness(90%);
+}
+
+.media-options a i {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 20px;
+}
+
+.media-options a span {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.facebook {
+    background-color: #4267b2;
+}
+
+.google {
+    background-color: #E94135;
+}
+
+@media only screen and (max-width: 410px) {
+    .media-options .facebook {
+        justify-content: left;
+        gap: 20px;
+    }
+
+    .media-options .facebook i {
+        position: unset;
+        transform: none;
+    }
+}
+
+@media only screen and (max-width: 385px) {
+    .media-options .google {
+        justify-content: left;
+        gap: 20px;
+    }
+
+    .media-options .google i {
+        position: unset;
+        transform: none;
+    }
+}
